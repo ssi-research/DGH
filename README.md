@@ -2,8 +2,8 @@
 
 
 ## Introduction
-This repository contains the Pytorch implementation of **DGH** as described in the paper **"DGH: Rapid Data Generation for Hardware-Friendly Post-Training Quantization"**. DGH is a method designed to improve model performance in zero-shot quantization. 
-DGH is a novel method designed to enhance model performance in zero-shot quantization. By optimizing synthetic data and improving quantization accuracy, DGH streamlines the deployment of fully quantized models, making them suitable for hardware.
+This repository contains the Pytorch implementation of **DGH** as described in the paper **"Data Generation for Hardware-Friendly Post-Training Quantization"**. 
+DGH is a method for generating images designed to improve model performance in zero-shot quantization. 
 
 <table>
   <tr>
@@ -114,9 +114,6 @@ dgh/
 ├── data_loaders/
 │   └── # Data loading utilities
 │
-├── model_params/
-│   └── # Saved model parameters for running and model related utilities
-│
 ├── dgh/
 │   ├── data_generation.py              # The main function for generating images (DGH)
 │   ├── default_functions.py            # Default functions used in the image generation process
@@ -134,11 +131,10 @@ dgh/
 │   └── # Saved model parameters for running and model related utilities
 │
 ├── constants.py                      # Constant definitions and configurations
-├── generate_images.py                # Script to generate images using DGH
 ├── image_preprocessing_utils.py      # Image processing utilities 
 ├── main.py                           # Main script to run the DGH pipeline
 ├── utils.py                          # Utility functions for general purposes
 ├── README.md                         # Project overview and running instructions
 ```
 ## References:
-[2] Li, Yuhang, et al. "BRECQ: Pushing the Limit of Post-Training Quantization by Block Reconstruction." ICLR 2021.
+[1] Li, Yuhang, et al. "BRECQ: Pushing the Limit of Post-Training Quantization by Block Reconstruction." ICLR 2021.
