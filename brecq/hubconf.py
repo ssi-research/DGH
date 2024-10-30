@@ -1,3 +1,12 @@
+# =============================================================================
+# Source: https://github.com/yhhhli/BRECQ
+# License: MIT License
+#
+# Attribution:
+# This file was sourced from the repository "BRECQ" by Yuhang Li,
+# available at https://github.com/yhhhli/BRECQ. Licensed under the MIT License.
+# =============================================================================
+
 from brecq.models.resnet import resnet18 as _resnet18
 from brecq.models.resnet import resnet50 as _resnet50
 from brecq.models.mobilenetv2 import mobilenetv2 as _mobilenetv2

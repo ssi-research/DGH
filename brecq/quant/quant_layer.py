@@ -1,3 +1,14 @@
+# =============================================================================
+# Source: https://github.com/yhhhli/BRECQ
+# License: MIT License
+#
+# Attribution:
+# This file was sourced from the repository "BRECQ" by Yuhang Li,
+# available at https://github.com/yhhhli/BRECQ. Licensed under the MIT License.
+#
+# Modifications:
+# - Added an epsilon value for numerical stability to prevent division by zero or similar
+# =============================================================================
 import warnings
 import torch
 import torch.nn as nn

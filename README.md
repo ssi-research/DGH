@@ -2,7 +2,8 @@
 
 
 ## Introduction
-This repository contains the Pytorch implementation of **DGH** as described in the paper **"Data Generation for Hardware-Friendly Post-Training Quantization"**. 
+This repository contains the Pytorch implementation of **DGH** as described in the paper [**"Data Generation for Hardware-Friendly Post-Training Quantization"**](https://arxiv.org/abs/2410.22110) (WACV 2025). 
+
 DGH is a method for generating images designed to improve model performance in zero-shot quantization. 
 
 <table>
@@ -136,5 +137,23 @@ dgh/
 ├── utils.py                          # Utility functions for general purposes
 ├── README.md                         # Project overview and running instructions
 ```
+
+## Citation
+If you use this code or find it helpful in your research, please consider citing our work:
+```angular2html
+@misc{dikstein2024datagenerationhardwarefriendlyposttraining,
+      title={Data Generation for Hardware-Friendly Post-Training Quantization}, 
+      author={Lior Dikstein and Ariel Lapid and Arnon Netzer and Hai Victor Habi},
+      year={2024},
+      eprint={2410.22110},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG},
+      url={https://arxiv.org/abs/2410.22110}, 
+}
+```
+
 ## References:
 [1] Li, Yuhang, et al. "BRECQ: Pushing the Limit of Post-Training Quantization by Block Reconstruction." ICLR 2021.
+
+## License
+This project is released under the [Apache 2.0 License](LICENSE).

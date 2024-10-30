@@ -1,3 +1,11 @@
+# =============================================================================
+# Source: https://github.com/yhhhli/BRECQ
+# License: MIT License
+#
+# Attribution:
+# This file was sourced from the repository "BRECQ" by Yuhang Li,
+# available at https://github.com/yhhhli/BRECQ. Licensed under the MIT License.
+# =============================================================================
 import torch
 import torch.nn.functional as F
 from brecq.quant.quant_layer import QuantModule, Union

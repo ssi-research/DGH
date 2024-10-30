@@ -1,3 +1,11 @@
+# =============================================================================
+# Source: https://github.com/yhhhli/BRECQ
+# License: MIT License
+#
+# Attribution:
+# This file was sourced from the repository "BRECQ" by Yuhang Li,
+# available at https://github.com/yhhhli/BRECQ. Licensed under the MIT License.
+# =============================================================================
 import os
 import pickle
 import torch.nn as nn
@@ -88,13 +96,6 @@ def brecq(model, args, cali_data, evaluation_fn, val_loader):
                 else:
                     print('Reconstruction for layer {}'.format(full_name))
                     layer_reconstruction(qnn, module, **kwargs)
-            # if isinstance(module, ActivationQuantization):
-            #     if module.ignore_reconstruction is True:
-            #         print('Ignore reconstruction of layer {}'.format(full_name))
-            #         continue
-            #     else:
-            #         print('Reconstruction for layer {}'.format(full_name))
-            #         activation_reconstruction(qnn, module, **kwargs)
             elif isinstance(module, BaseQuantBlock):
                 if module.ignore_reconstruction is True:
                     print('Ignore reconstruction of block {}'.format(full_name))
